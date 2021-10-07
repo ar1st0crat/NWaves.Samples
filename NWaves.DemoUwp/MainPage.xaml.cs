@@ -34,7 +34,7 @@ namespace NWaves.DemoUwp
 
         private async void File_Click(object sender, RoutedEventArgs e)
         {
-            if (graph == null)
+            if (graph is null)
             {
                 await CreateAudioGraph();
             }
@@ -63,7 +63,7 @@ namespace NWaves.DemoUwp
             filePicker.ViewMode = PickerViewMode.Thumbnail;
             StorageFile file = await filePicker.PickSingleFileAsync();
 
-            if (file == null)
+            if (file is null)
             {
                 return;
             }

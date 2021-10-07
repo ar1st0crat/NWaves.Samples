@@ -15,7 +15,6 @@ namespace NWaves.DemoForms
             Phase
         }
 
-        Modulator _modulator = new Modulator();
         ModulationMode _modulationMode = ModulationMode.Amplitude;
         DiscreteSignal _modulated;
 
@@ -50,15 +49,15 @@ namespace NWaves.DemoForms
             switch (_modulationMode)
             {
                 case ModulationMode.Frequency:
-                    _modulated = _modulator.Frequency(baseband, carrierAmplitude, carrierFrequency);
+                    _modulated = Modulator.Frequency(baseband, carrierAmplitude, carrierFrequency);
                     break;
 
                 case ModulationMode.Phase:
-                    _modulated = _modulator.Phase(baseband, carrierAmplitude, carrierFrequency);
+                    _modulated = Modulator.Phase(baseband, carrierAmplitude, carrierFrequency);
                     break;
 
                 default:
-                    _modulated = _modulator.Amplitude(carrier, modulationFrequency, modulationIndex);
+                    _modulated = Modulator.Amplitude(carrier, modulationFrequency, modulationIndex);
                     break;
             }
             
@@ -74,11 +73,11 @@ namespace NWaves.DemoForms
             {
                 case ModulationMode.Frequency:
                 case ModulationMode.Phase:
-                    demodulated = _modulator.DemodulateFrequency(_modulated);
+                    demodulated = Modulator.DemodulateFrequency(_modulated);
                     break;
 
                 default:
-                    demodulated = _modulator.DemodulateAmplitude(_modulated);
+                    demodulated = Modulator.DemodulateAmplitude(_modulated);
                     break;
             }
             

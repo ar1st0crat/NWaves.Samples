@@ -55,7 +55,7 @@
                     <Slider Name="FreqSlider"
                             Value="{Binding Freq, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                             ValueChanged="MaxFreqChanged"
-                            Minimum="500"
+                            Minimum="800"
                             Maximum="5000"
                             Width="200"
                             VerticalAlignment="Center" />

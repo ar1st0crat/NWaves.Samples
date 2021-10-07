@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NWaves, Version=0.9.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NWaves.0.9.5\lib\netstandard2.0\NWaves.dll</HintPath>
+    <Reference Include="NWaves, Version=0.9.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NWaves.0.9.6\lib\netstandard2.0\NWaves.dll</HintPath>
     </Reference>
     <Reference Include="SciColorMaps, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ar1st0crat.SciColorMaps.1.0.2\lib\portable40-net40+sl5+win8+wpa81\SciColorMaps.dll</HintPath>

@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using NWaves.Audio;
-using NWaves.Filters;
 using NWaves.Operations;
 using NWaves.Signals;
 using NWaves.Transforms;
@@ -61,14 +59,15 @@ namespace NWaves.DemoForms
             var processed = _stft.Inverse(_stft.Direct(_signal));
             _processedSignal = new DiscreteSignal(_signal.SamplingRate, processed);
 
-            
+
             // 1) check also this:
             //var mp = _stft.MagnitudePhaseSpectrogram(_signal);
             //var processed = _stft.ReconstructMagnitudePhase(mp, false);
             //_processedSignal = new DiscreteSignal(_signal.SamplingRate, processed);
 
             // 2) or check this:
-            //var processed = new GriffinLimReconstructor(_spectrogram, _stft).Reconstruct();
+            //var gl = new GriffinLimReconstructor(_spectrogram, 512, 128, _windowType) { Gain = 20 };
+            //var processed = gl.Reconstruct(16);
             //_processedSignal = new DiscreteSignal(_signal.SamplingRate, processed);
 
             signalPanel.Gain = 120;

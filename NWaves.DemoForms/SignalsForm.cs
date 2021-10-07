@@ -6,9 +6,9 @@ using NWaves.Audio;
 using NWaves.Audio.Interfaces;
 using NWaves.Audio.Mci;
 using NWaves.Signals;
+using NWaves.Signals.Builders.Base;
 using NWaves.Signals.Builders;
 using NWaves.Transforms;
-using NWaves.Transforms.Wavelets;
 
 namespace NWaves.DemoForms
 {
