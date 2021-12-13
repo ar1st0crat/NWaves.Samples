@@ -22,6 +22,13 @@ In order to specify HRIRs, simply click on any file in one of the subject's fold
 <img src="https://github.com/ar1st0crat/NWaves.Samples/blob/main/screenshots/stereo.png" width="600" />
 
 
+### NWaves.DemoMfccOnline
+
+This simple WPF app lets you load audio from any WAV file or record audio from selected input device and compute its MFCC vectors on the fly, during the playback/recording.
+
+![onlinedemo](https://github.com/ar1st0crat/NWaves.Samples/blob/main/screenshots/mfccdemo.gif)
+
+
 ### NWaves.DemoUwp
 
 This demo app shows how we can add NWaves audio effects, filters and block convolvers to UWP projects for online audio processing. In this example we work with ```AutowahEffect``` and allow user online-tweaking only couple of its parameters: maximum LFO frequency and Q factor.
