@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ar1st0crat.SciColorMaps.Portable" Version="1.0.2" />
+    <PackageReference Include="NAudio" Version="2.0.1" />
+    <PackageReference Include="NWaves" Version="0.9.6" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,69 @@
+﻿<Window x:Class="NWaves.DemoMfccOnline.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm ="clr-namespace:NWaves.DemoMfccOnline.ViewModels"
+        mc:Ignorable="d"
+        Title="MFCC online"
+        Height="500" Width="800">
+    
+    <Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style x:Key="AppButton" TargetType="Button">
+            <Setter Property="Background" Value="#d1d1f1"/>
+            <Setter Property="BorderBrush" Value="Transparent" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Style="{StaticResource AppButton}"
+                    Content="Play"
+                    Command="{Binding PlayCommand}"
+                    Margin="10" Width="80" />
+            <Button Style="{StaticResource AppButton}"
+                    Content="Stop"
+                    Command="{Binding StopCommand}"
+                    Margin="10,10,30,10" Width="80" />
+            <Button Style="{StaticResource AppButton}"
+                    Content="Record"
+                    Command="{Binding StartRecordingCommand}" 
+                    Margin="30,10,10,10" Width="80" />
+            <Button Style="{StaticResource AppButton}"
+                    Content="Stop" 
+                    Command="{Binding StopRecordingCommand}" 
+                    Margin="10" Width="80" />
+            <ComboBox ItemsSource="{Binding Devices}"
+                      SelectedIndex="{Binding DeviceNumber}"
+                      Margin="23" Width="250" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center">
+            <Image Source="{Binding WaveformBitmap, UpdateSourceTrigger=PropertyChanged}"
+                   Width="{Binding WaveformBitmap.Width}"
+                   Height="150" />
+            <Image Source="{Binding MfccBitmap, UpdateSourceTrigger=PropertyChanged}"
+                   Width="{Binding MfccBitmap.Width}"
+                   Height="150" Stretch="Fill" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical">
+            <Button Style="{StaticResource AppButton}"
+                    Content="Save MFCC to csv..."
+                    Command="{Binding SaveToCsvCommand}"
+                    Width="160" Height="40" Margin="20" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWaves.DemoUwpEffect", "NWa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NWaves.DemoStereo", "NWaves.DemoStereo\NWaves.DemoStereo.csproj", "{5210DD3D-177D-4E73-A7C2-0EC157C37B67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWaves.DemoMfccOnline", "NWaves.DemoMfccOnline\NWaves.DemoMfccOnline.csproj", "{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		NWaves.DemoXamarin\NWaves.DemoXamarin\NWaves.DemoXamarin.projitems*{4e69d1a8-4d08-436a-9cbb-106770206401}*SharedItemsImports = 4
@@ -123,6 +125,22 @@ Global
 		{5210DD3D-177D-4E73-A7C2-0EC157C37B67}.Release|x64.Build.0 = Release|Any CPU
 		{5210DD3D-177D-4E73-A7C2-0EC157C37B67}.Release|x86.ActiveCfg = Release|Any CPU
 		{5210DD3D-177D-4E73-A7C2-0EC157C37B67}.Release|x86.Build.0 = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|x64.Build.0 = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Debug|x86.Build.0 = Debug|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|ARM.Build.0 = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|x64.ActiveCfg = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|x64.Build.0 = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|x86.ActiveCfg = Release|Any CPU
+		{A21C4D9D-16E9-45EA-9926-DC54CAE76CC2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
