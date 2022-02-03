@@ -140,6 +140,9 @@ namespace NWaves.DemoMfccOnline.Services
 
         public void StartRecording(int deviceNumber = 0)
         {
+            _recorder?.StopRecording();
+            _recorder?.Dispose();
+
             _recorder = new WaveIn
             {
                 WaveFormat = WaveFormat.CreateIeeeFloatWaveFormat(16000, 1),
