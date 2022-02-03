@@ -830,8 +830,8 @@ namespace NWaves.DemoForms
 
             _filter.Reset();
 
-            _filteredSignal = _filter.ProcessChunks(_signal);
-            //_filteredSignal = _filter.ProcessChunks(_signal, method: FilteringMethod.OverlapAdd);
+            _filteredSignal = _filter.ApplyTo(_signal);
+            //_filteredSignal = _filter.ApplyTo(_signal, method: FilteringMethod.OverlapAdd);
             signalAfterFilteringPanel.Signal = _filteredSignal;
             spectrogramAfterFilteringPanel.Spectrogram = _stft.Spectrogram(_filteredSignal);
 #endif
